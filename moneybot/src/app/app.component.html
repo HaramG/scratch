@@ -1,0 +1,7 @@
+<div *ngIf="!auth.tru">
+<input [(ngModel)]="auth.c.email">
+<input [(ngModel)]="auth.c.pw" type="password">
+<p (click)="auth.initialize()">Flow</p>
+</div>
+<p (click)="auth.demodulate()">Off</p>
+<p (click)="auth.getNewAddress()">Get</p>
